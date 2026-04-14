@@ -403,8 +403,6 @@ const routeTree = rootRoute.addChildren([
   landingRoute,
   skillsRoute,
   loginRoute,
-  registerRoute,
-  resetPasswordRoute,
   privacyRoute,
   searchRoute,
   termsRoute,

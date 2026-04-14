@@ -74,6 +74,11 @@ spring:
             enable: ${SPRING_MAIL_SMTP_STARTTLS_ENABLE:false}
 
 skillhub:
+  feishu:
+    enabled: ${SKILLHUB_FEISHU_ENABLED:false}
+    app-id: ${SKILLHUB_FEISHU_APP_ID:}
+    app-secret: ${SKILLHUB_FEISHU_APP_SECRET:}
+    initial-admin-open-ids: ${SKILLHUB_FEISHU_INITIAL_ADMIN_OPEN_IDS:}
   auth:
     mock:
       enabled: ${SKILLHUB_AUTH_MOCK_ENABLED:false}
