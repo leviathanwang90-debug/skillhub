@@ -182,17 +182,10 @@ export function ProfileSettingsPage() {
             <CardTitle>{t('profile.title')}</CardTitle>
             <CardDescription>{t('profile.subtitle')}</CardDescription>
           </div>
-          {!isEditing ? (
-            <div className="flex items-center gap-2">
-              <Button type="button" variant="outline" size="sm" onClick={() => void navigate({ to: '/reset-password' })}>
-                {t('profile.resetPassword')}
-              </Button>
-              {hasEditableFields ? (
-                <Button type="button" variant="outline" size="sm" onClick={handleEdit}>
-                  {t('profile.edit')}
-                </Button>
-              ) : null}
-            </div>
+          {!isEditing && hasEditableFields ? (
+            <Button type="button" variant="outline" size="sm" onClick={handleEdit}>
+              {t('profile.edit')}
+            </Button>
           ) : null}
         </CardHeader>
         <CardContent className="space-y-6">
