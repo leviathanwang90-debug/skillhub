@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { useNavigate } from '@tanstack/react-router'
 import { useTranslation } from 'react-i18next'
 import { useQuery, useQueryClient } from '@tanstack/react-query'
 import { ApiError, profileApi } from '@/api/client'
@@ -39,7 +38,6 @@ function getFieldValue(
 export function ProfileSettingsPage() {
   const { t } = useTranslation()
   const { user } = useAuth()
-  const navigate = useNavigate()
   const queryClient = useQueryClient()
 
   const [isEditing, setIsEditing] = useState(false)
