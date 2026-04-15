@@ -13,8 +13,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-        <script src="https://lf-package-cn.feishucdn.com/obj/feishu-static/lark/passport/qrcode/LarkSSOSDKWebQRCode-1.0.3.js" defer />
-        <script src="https://sf-unpkg-src.bytedance.net/open/jssdk/jssdk-1.5.1.js" defer />
+        {/* 飞书 H5 JSSDK - 官方推荐 CDN 地址 */}
+        <script src="https://lf1-cdn-tos.bytegoofy.com/goofy/lark/op/h5-js-sdk-1.5.26.js" />
       </head>
       <body className="bg-dots min-h-screen">
         {children}
